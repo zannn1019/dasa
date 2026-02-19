@@ -33,7 +33,7 @@
           opacity: 1,
           scale: 1,
           y: 0,
-          duration: 1.2,
+          duration: 0.5,
           ease: "power3.out",
         })
 
@@ -43,7 +43,7 @@
           {
             opacity: 0.6,
             scale: 1,
-            duration: 0.8,
+            duration: 0.4,
             ease: "power2.out",
           },
           "-=0.4",
@@ -53,7 +53,7 @@
           [counterRef.value],
           {
             opacity: 1,
-            duration: 0.4,
+            duration: 0.2,
             ease: "power2.out",
           },
           "-=0.2",
@@ -65,7 +65,7 @@
           {
             scale: 1.3,
             opacity: 0.8,
-            duration: 0.3,
+            duration: 0.1,
             ease: "power2.in",
             yoyo: true,
             repeat: 1,

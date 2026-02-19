@@ -59,7 +59,7 @@
         <img src="~/assets/images/Logo.png" alt="Dasa Logo" />
       </NuxtLink>
 
-      <nav ref="navRef" class="nav" :class="{ 'nav--hidden': isScrolled }">
+      <nav ref="navRef" class="nav">
         <ul class="nav-list">
           <li v-for="link in navLinks" :key="link.name">
             <NuxtLink :to="link.path" class="nav-link">
@@ -69,17 +69,12 @@
         </ul>
       </nav>
 
-      <div ref="actionsRef" class="actions" :class="{ 'actions--hidden': isScrolled }">
+      <div ref="actionsRef" class="actions">
         <BaseButton variant="secondary" size="sm">EN</BaseButton>
         <BaseButton to="#contact" variant="primary" size="sm">Connect</BaseButton>
       </div>
 
-      <button
-        class="mobile-menu-toggle"
-        :class="{ 'mobile-menu-toggle--visible': isScrolled }"
-        @click="toggleMobileMenu"
-        aria-label="Toggle menu"
-      >
+      <button class="mobile-menu-toggle" @click="toggleMobileMenu" aria-label="Toggle menu">
         <span class="hamburger" :class="{ 'hamburger--active': isMobileMenuOpen }">
           <span></span>
           <span></span>
