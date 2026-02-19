@@ -181,19 +181,22 @@
   }
 
   .footer-button {
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    z-index: 100;
-    background: var(--dt-white);
-    color: var(--dt-black);
-    width: 550px;
-    height: 100px;
-    font-weight: var(--font-weight-regular);
-    font-size: var(--font-size-xl);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    z-index: 100 !important;
+    background: var(--dt-white) !important;
+    color: var(--dt-black) !important;
+    width: 550px !important;
+    height: 100px !important;
+    font-weight: var(--font-weight-regular) !important;
+    font-size: var(--font-size-xl) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    text-decoration: none !important;
   }
 
   .footer-button:hover {
