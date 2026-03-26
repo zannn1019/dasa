@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_technology_tags",
+  "info": {
+    "displayName": "technology-tag"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

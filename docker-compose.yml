@@ -1,0 +1,66 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./dasa-frontend
+      dockerfile: Dockerfile
+    container_name: dasa-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - STRAPI_URL=http://localhost:1337
+      - NUXT_STRAPI_URL=http://cms:1337
+    networks:
+      - dasa-network
+    depends_on:
+      - cms
+
+  cms:
+    build:
+      context: ./dasa-cms
+      dockerfile: Dockerfile
+    container_name: dasa-cms
+    restart: unless-stopped
+    ports:
+      - "1337:1337"
+    env_file:
+      - ./dasa-cms/.env
+    environment:
+      # These variables force Strapi to bridge to the PostgreSQL database mapped below!
+      - DATABASE_CLIENT=postgres
+      - DATABASE_HOST=db
+      - DATABASE_PORT=5432
+      - DATABASE_NAME=strapi
+      - DATABASE_USERNAME=strapi
+      - DATABASE_PASSWORD=strapiDatabaseSecret!
+      - DATABASE_SSL=false
+    volumes:
+      # Uploaded media needs persisting
+      - ./dasa-cms/public/uploads:/opt/app/public/uploads
+    networks:
+      - dasa-network
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15-alpine
+    container_name: dasa-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: strapi
+      POSTGRES_PASSWORD: strapiDatabaseSecret!
+      POSTGRES_DB: strapi
+    volumes:
+      # A safe virtual isolated volume just for the Postgres database engine
+      - dasa-postgres-data:/var/lib/postgresql/data
+    networks:
+      - dasa-network
+
+volumes:
+  dasa-postgres-data:
+
+networks:
+  dasa-network:
+    driver: bridge

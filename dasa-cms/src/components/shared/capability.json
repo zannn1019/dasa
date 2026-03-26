@@ -1,0 +1,8 @@
+{
+  "collectionName": "components_sections_capabilities",
+  "info": { "displayName": "capability", "icon": "tools" },
+  "attributes": {
+    "icon": { "type": "string" },
+    "label": { "type": "string" }
+  }
+}

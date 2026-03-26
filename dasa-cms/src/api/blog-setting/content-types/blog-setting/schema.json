@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "blog_settings",
+  "info": {
+    "singularName": "blog-setting",
+    "pluralName": "blog-settings",
+    "displayName": "Blog Setting"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rssFeedUrl": {
+      "type": "string",
+      "required": true
+    },
+    "itemsToShow": {
+      "type": "integer",
+      "required": true,
+      "default": 2
+    }
+  }
+}

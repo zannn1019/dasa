@@ -1,0 +1,145 @@
+{
+  "site": {
+    "name": "Dasa",
+    "tagline": "Most Reliable and Trusted Technology Company",
+    "language": "EN",
+    "copyright": "Copyright © 2026 Dasa. All rights reserved."
+  },
+  "contact": {
+    "phone": {
+      "display": "(+62) 21 278 72101",
+      "link": "tel:+622127872101"
+    },
+    "email": {
+      "display": "info@dasa.com",
+      "link": "mailto:info@dasa.com"
+    },
+    "address": {
+      "street": "Jl. Muara No.111",
+      "area": "Tanjung Barat, Jagakarsa,",
+      "city": "Jakarta Selatan 12530 - Indonesia"
+    },
+    "officeHours": "Monday to Friday From 9.00 AM to 6.00 PM"
+  },
+  "navigation": {
+    "mainMenu": [
+      { "name": "Home", "path": "/" },
+      { "name": "Services", "path": "#services" },
+      { "name": "Partner", "path": "#partners" },
+      { "name": "About", "path": "#about" }
+    ],
+    "footerQuickLinks": [
+      { "name": "Home", "path": "/" },
+      { "name": "About", "path": "#about" },
+      { "name": "Services", "path": "#services" },
+      { "name": "Achievements", "path": "#achievements" }
+    ],
+    "footerServices": [
+      { "name": "Data Analysis", "path": "#" },
+      { "name": "IT Strategy & Consulting", "path": "#" },
+      { "name": "DevOps", "path": "#" },
+      { "name": "IT Optimization", "path": "#" }
+    ]
+  },
+  "hero": {
+    "title": "Most Reliable and Trusted Technology Company",
+    "subtitle": "We are a company to help you with system integration, data integration technology implementation, big data implementation, development, and management services.",
+    "buttonText": "Let's Connect",
+    "buttonLink": "#contact",
+    "slides": ["System Integration", "Data Integration", "Technology"],
+    "backgroundImage": "~/assets/images/hero-bg-2.png"
+  },
+  "about": {
+    "sectionTitle": "About Company",
+    "title": "Deliver the best technology solution",
+    "description": "We focused on end to end IT solution to help a company improve their capabilities in facing today business challenges with technology.",
+    "stats": [
+      { "number": "25+", "label": "Clients" },
+      { "number": "70+", "label": "Projects Delivered" },
+      { "number": "99%", "label": "Happy Clients" }
+    ],
+    "capabilities": [
+      { "icon": "wrench", "label": "Build" },
+      { "icon": "search", "label": "Research" },
+      { "icon": "code", "label": "Develop" }
+    ]
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What we deliver to customers",
+    "watermark": "SERVICES",
+    "items": [
+      {
+        "title": "Dev Ops",
+        "description": "Streamline your development lifecycle with automated CI/CD pipelines, containerization, and robust cloud infrastructure management.",
+        "image": "~/assets/images/service-1.png"
+      },
+      {
+        "title": "Data Integration",
+        "description": "Connect and synchronize disparate data sources into a unified, reliable stream of information for your business processes.",
+        "image": "~/assets/images/service-2.png"
+      },
+      {
+        "title": "Database Platform",
+        "description": "Design and optimize high-performance database systems that ensure data integrity, security, and high availability.",
+        "image": "~/assets/images/service-3.png"
+      },
+      {
+        "title": "Development",
+        "description": "Build scalable, robust applications using modern frameworks and industry best practices tailored to your specific requirements.",
+        "image": "~/assets/images/service-4.png"
+      }
+    ]
+  },
+  "partners": {
+    "items": [
+      {
+        "name": "Astra Graphia Information Technology",
+        "logo": "~/assets/partners/Astra-Graphia-Information-Technology-1024x535.png"
+      },
+      {
+        "name": "IT Group Indonesia",
+        "logo": "~/assets/partners/IT-Group-Indonesia1.png"
+      },
+      {
+        "name": "Indosat",
+        "logo": "~/assets/partners/Indosat-1024x546.png"
+      },
+      {
+        "name": "Mitra Pinasthika Mulia",
+        "logo": "~/assets/partners/Mitra-Pinasthika-Mulia1-1024x280.png"
+      },
+      {
+        "name": "PGN Solution",
+        "logo": "~/assets/partners/PGN-Solution.png"
+      },
+      {
+        "name": "Prodia Widyahusada",
+        "logo": "~/assets/partners/Prodia-Widyahusada.png"
+      },
+      {
+        "name": "Sigma Cipta Caraka",
+        "logo": "~/assets/partners/Sigma-Cipta-Caraka1-1024x302.png"
+      },
+      {
+        "name": "Sinarmas Finance",
+        "logo": "~/assets/partners/Sinarmas-Finance.png"
+      }
+    ],
+    "backgroundImage": "~/assets/images/map-bg.png"
+  },
+  "footer": {
+    "ctaSection": {
+      "subtitle": "Get In Touch",
+      "title": "Let's connect with us",
+      "buttonText": "LET'S CONNECT",
+      "buttonLink": "#contact"
+    },
+    "logo": "~/assets/images/Logo.png",
+    "backgroundText": "DASA"
+  },
+  "blog": {
+    "rssFeedUrl": "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@medianraya",
+    "itemsToShow": 2
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "partners": [
+    {
+      "category": "Database Solution",
+      "items": [
+        { "name": "ORACLE", "logo": "https://daas.co.id/wp-content/uploads/2022/08/oracle1.png", "url": "https://www.oracle.com/id/" },
+        { "name": "RED HAT", "logo": "https://daas.co.id/wp-content/uploads/2022/08/1RedHat-OS.png", "url": "https://www.redhat.com/en" },
+        { "name": "AWS", "logo": "https://daas.co.id/wp-content/uploads/2022/07/APN-Logo_Web_Color.png", "url": "https://aws.amazon.com/id/" }
+      ]
+    },
+    {
+      "category": "Database Integration Solution",
+      "items": [
+        { "name": "AWS Partner Network", "logo": "https://daas.co.id/wp-content/uploads/2022/07/APN-Logo_Web_Color.png", "url": "https://aws.amazon.com/id/" },
+        { "name": "Elastic", "logo": "https://daas.co.id/wp-content/uploads/2022/07/logo-elastic-horizontal-color.png", "url": "https://www.elastic.co/" },
+        { "name": "Dynatrace", "logo": "https://daas.co.id/wp-content/uploads/2022/07/Dynatrace_Logo_color_positive_horizontal.png", "url": "https://www.dynatrace.com/" },
+        { "name": "Oracle Data Integrator", "logo": "https://daas.co.id/wp-content/uploads/2022/08/1Oracle-Data-Integrator.png", "url": "https://www.oracle.com/integration/data-integrator-enterprise-edition/" },
+        { "name": "Talend", "logo": "https://daas.co.id/wp-content/uploads/2022/08/Talend.png", "url": "https://www.talend.com/" }
+      ]
+    },
+    {
+      "category": "Big Data Solution",
+      "items": [
+        { "name": "HEWLETT PACKARD ENTERPRISE", "logo": "https://daas.co.id/wp-content/uploads/2022/08/Hewlett-Packard-Enterprise-1.png", "url": "https://www.hpe.com/us/en/home.html" },
+        { "name": "CLOUDERA", "logo": "https://daas.co.id/wp-content/uploads/2022/08/cloudera.png", "url": "https://www.cloudera.com/" },
+        { "name": "ELASTIC", "logo": "https://daas.co.id/wp-content/uploads/2022/07/logo-elastic-horizontal-color.png", "url": "https://www.elastic.co/" },
+        { "name": "Nifi", "logo": "https://daas.co.id/wp-content/uploads/2022/08/1NiFI.png", "url": "https://nifi.apache.org/" }
+      ]
+    },
+    {
+      "category": "Advanced Monitoring",
+      "items": [
+        { "name": "DYNATRACE", "logo": "https://daas.co.id/wp-content/uploads/2022/07/Dynatrace_Logo_color_positive_horizontal.png", "url": "https://www.dynatrace.com/" },
+        { "name": "Elastic", "logo": "https://daas.co.id/wp-content/uploads/2022/07/logo-elastic-horizontal-color.png", "url": "https://www.elastic.co/" },
+        { "name": "Solarwinds", "logo": "https://daas.co.id/wp-content/uploads/2022/08/1solarwinds.png", "url": "https://www.solarwinds.com/" }
+      ]
+    },
+    {
+      "category": "System Administrator",
+      "items": [
+        { "name": "F5", "logo": "https://daas.co.id/wp-content/uploads/2022/08/F5.png", "url": "https://www.f5.com/" },
+        { "name": "RED HAT", "logo": "https://daas.co.id/wp-content/uploads/2022/08/1RedHat-OS.png", "url": "https://www.redhat.com/en" },
+        { "name": "Dell EMC", "logo": "https://daas.co.id/wp-content/uploads/2022/08/Dell-EMC.png", "url": "https://www.dell.com/" },
+        { "name": "VMware Tanzu", "logo": "https://daas.co.id/wp-content/uploads/2022/08/VMware-Tanzu.png", "url": "https://tanzu.vmware.com/tanzu" }
+      ]
+    },
+    {
+      "category": "Devops",
+      "items": [
+        { "name": "RED HAT OPENSHIFT", "logo": "https://daas.co.id/wp-content/uploads/2022/08/RED-HAT-OPENSHIFT.png", "url": "https://developers.redhat.com/products/openshift/overview" },
+        { "name": "RED HAT", "logo": "https://daas.co.id/wp-content/uploads/2022/08/1RedHat-OS.png", "url": "https://www.redhat.com/en" },
+        { "name": "Kubernetes", "logo": "https://daas.co.id/wp-content/uploads/2022/08/Kubernetes.png", "url": "https://kubernetes.io/" },
+        { "name": "Docker", "logo": "https://daas.co.id/wp-content/uploads/2022/08/Docker.png", "url": "https://www.docker.com/" },
+        { "name": "KubeSphere", "logo": "https://daas.co.id/wp-content/uploads/2022/08/KubeSpehere.png", "url": "https://kubesphere.io/" },
+        { "name": "Rancher", "logo": "https://daas.co.id/wp-content/uploads/2022/08/Rancher.png", "url": "https://rancher.com/" }
+      ]
+    }
+  ]
+}

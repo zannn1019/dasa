@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "name": "Astra Graphia Information Technology",
+      "logo": "~/assets/partners/Astra-Graphia-Information-Technology-1024x535.png"
+    },
+    {
+      "name": "IT Group Indonesia",
+      "logo": "~/assets/partners/IT-Group-Indonesia1.png"
+    },
+    {
+      "name": "Indosat",
+      "logo": "~/assets/partners/Indosat-1024x546.png"
+    },
+    {
+      "name": "Mitra Pinasthika Mulia",
+      "logo": "~/assets/partners/Mitra-Pinasthika-Mulia1-1024x280.png"
+    },
+    {
+      "name": "PGN Solution",
+      "logo": "~/assets/partners/PGN-Solution.png"
+    },
+    {
+      "name": "Prodia Widyahusada",
+      "logo": "~/assets/partners/Prodia-Widyahusada.png"
+    },
+    {
+      "name": "Sigma Cipta Caraka",
+      "logo": "~/assets/partners/Sigma-Cipta-Caraka1-1024x302.png"
+    },
+    {
+      "name": "Sinarmas Finance",
+      "logo": "~/assets/partners/Sinarmas-Finance.png"
+    }
+  ],
+  "backgroundImage": "~/assets/images/map-bg.png"
+}

@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_settings",
+  "info": {
+    "singularName": "site-setting",
+    "pluralName": "site-settings",
+    "displayName": "Site Setting"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "shortName": {
+      "type": "string",
+      "required": true
+    },
+    "siteUrl": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "ogImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "twitterHandle": {
+      "type": "string"
+    },
+    "social": {
+      "type": "component",
+      "component": "socmed.social-media",
+      "repeatable": true
+    },
+    "contact": {
+      "type": "component",
+      "component": "shared.contact",
+      "repeatable": false
+    }
+  }
+}

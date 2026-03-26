@@ -1,0 +1,23 @@
+{
+  "name": "Dasa Aprilando Sentosa",
+  "shortName": "DASA",
+  "siteUrl": "https://dasa.co.id",
+  "tagline": {
+    "en": "Most Reliable and Trusted Technology Company",
+    "id": "Perusahaan Teknologi Terpercaya dan Terdepan"
+  },
+  "description": {
+    "en": "DASA Aprilando Sentosa is an end-to-end IT solutions company helping businesses improve their capabilities through technology — from DevOps and data integration to custom software development.",
+    "id": "DASA Aprilando Sentosa adalah perusahaan solusi IT end-to-end yang membantu bisnis meningkatkan kapabilitas melalui teknologi — dari DevOps dan integrasi data hingga pengembangan perangkat lunak khusus."
+  },
+  "ogImage": "/images/og-cover.png",
+  "twitterHandle": "@dasatech",
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/dasa-aprilindo-sentosa/",
+    "instagram": "https://instagram.com/dasa_id"
+  },
+  "copyright": {
+    "en": "Copyright © 2026 Dasa. All rights reserved.",
+    "id": "Hak Cipta © 2026 Dasa. Seluruh hak dilindungi."
+  }
+}

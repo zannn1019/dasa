@@ -1,0 +1,271 @@
+[
+  {
+    "Variables": {
+      "modes": {
+        "Light Mode": {
+          "colors": {
+            "brand": {
+              "primary": {
+                "$scopes": ["ALL_FILLS", "STROKE_COLOR"],
+                "$description": "Main brand blue",
+                "$type": "color",
+                "$value": "#0056d2"
+              },
+              "orange": {
+                "$scopes": ["ALL_SCOPES"],
+                "$type": "color",
+                "$value": "#ea9d7e"
+              },
+              "orange-darker": {
+                "$scopes": ["ALL_SCOPES"],
+                "$type": "color",
+                "$value": "#ee5d22"
+              },
+              "secondary": {
+                "$scopes": ["ALL_FILLS"],
+                "$description": "Dark brand color",
+                "$type": "color",
+                "$value": "#2f3542"
+              }
+            },
+            "text": {
+              "primary": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#111827"
+              },
+              "secondary": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#6b7280"
+              },
+              "disabled": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#9ca3af"
+              },
+              "inverse": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#ffffff"
+              }
+            },
+            "surface": {
+              "base": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#ffffff"
+              },
+              "alt": {
+                "$scopes": ["ALL_FILLS"],
+                "$type": "color",
+                "$value": "#f3f4f6"
+              }
+            },
+            "border": {
+              "default": {
+                "$scopes": ["STROKE_COLOR"],
+                "$type": "color",
+                "$value": "#e5e7eb"
+              },
+              "focus": {
+                "$scopes": ["STROKE_COLOR"],
+                "$type": "color",
+                "$value": "#0056d2"
+              }
+            }
+          },
+          "spacing": {
+            "0": {
+              "$scopes": ["WIDTH_HEIGHT", "GAP"],
+              "$type": "float",
+              "$value": 0
+            },
+            "1": {
+              "$scopes": ["WIDTH_HEIGHT", "GAP"],
+              "$type": "float",
+              "$value": 4
+            },
+            "2": {
+              "$scopes": ["WIDTH_HEIGHT", "GAP"],
+              "$type": "float",
+              "$value": 8
+            },
+            "3": {
+              "$scopes": ["WIDTH_HEIGHT", "GAP"],
+              "$type": "float",
+              "$value": 12
+            },
+            "4": {
+              "$scopes": ["WIDTH_HEIGHT", "GAP"],
+              "$type": "float",
+              "$value": 16
+            },
+            "5": {
+              "$scopes": ["WIDTH_HEIGHT", "GAP"],
+              "$type": "float",
+              "$value": 20
+            },
+            "6": {
+              "$scopes": ["WIDTH_HEIGHT", "GAP"],
+              "$type": "float",
+              "$value": 24
+            },
+            "8": {
+              "$scopes": ["WIDTH_HEIGHT", "GAP"],
+              "$type": "float",
+              "$value": 32
+            },
+            "10": {
+              "$scopes": ["WIDTH_HEIGHT", "GAP"],
+              "$type": "float",
+              "$value": 40
+            },
+            "12": {
+              "$scopes": ["WIDTH_HEIGHT", "GAP"],
+              "$type": "float",
+              "$value": 48
+            },
+            "16": {
+              "$scopes": ["WIDTH_HEIGHT", "GAP"],
+              "$type": "float",
+              "$value": 64
+            }
+          },
+          "radius": {
+            "none": {
+              "$scopes": ["CORNER_RADIUS"],
+              "$type": "float",
+              "$value": 0
+            },
+            "sm": {
+              "$scopes": ["CORNER_RADIUS"],
+              "$type": "float",
+              "$value": 4
+            },
+            "md": {
+              "$scopes": ["CORNER_RADIUS"],
+              "$type": "float",
+              "$value": 8
+            },
+            "lg": {
+              "$scopes": ["CORNER_RADIUS"],
+              "$type": "float",
+              "$value": 12
+            },
+            "xl": {
+              "$scopes": ["ALL_SCOPES"],
+              "$type": "float",
+              "$value": 16
+            },
+            "2xl": {
+              "$scopes": ["ALL_SCOPES"],
+              "$type": "float",
+              "$value": 20
+            },
+            "3xl": {
+              "$scopes": ["ALL_SCOPES"],
+              "$type": "float",
+              "$value": 24
+            },
+            "full": {
+              "$scopes": ["CORNER_RADIUS"],
+              "$type": "float",
+              "$value": 9999
+            }
+          },
+          "typography": {
+            "font-family": {
+              "primary": {
+                "$scopes": ["FONT_FAMILY"],
+                "$description": "Main font family",
+                "$type": "string",
+                "$value": "Inter"
+              },
+              "mono": {
+                "$scopes": ["FONT_FAMILY"],
+                "$description": "Code snippets",
+                "$type": "string",
+                "$value": "JetBrains Mono"
+              }
+            },
+            "font-size": {
+              "xs": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 12
+              },
+              "sm": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 14
+              },
+              "base": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 16
+              },
+              "lg": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 18
+              },
+              "xl": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 20
+              },
+              "2xl": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 24
+              },
+              "3xl": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 30
+              },
+              "4xl": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 36
+              },
+              "5xl": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 48
+              },
+              "6xl": {
+                "$scopes": ["FONT_SIZE"],
+                "$type": "float",
+                "$value": 60
+              },
+              "7xl": {
+                "$scopes": ["ALL_SCOPES"],
+                "$type": "float",
+                "$value": 72
+              }
+            },
+            "font-weight": {
+              "regular": {
+                "$scopes": ["FONT_WEIGHT"],
+                "$type": "float",
+                "$value": 400
+              },
+              "medium": {
+                "$scopes": ["FONT_WEIGHT"],
+                "$type": "float",
+                "$value": 500
+              },
+              "bold": {
+                "$scopes": ["FONT_WEIGHT"],
+                "$type": "float",
+                "$value": 700
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

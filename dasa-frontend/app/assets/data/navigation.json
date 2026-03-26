@@ -1,0 +1,20 @@
+{
+  "mainMenu": [
+    { "name": { "en": "Home", "id": "Beranda" }, "path": "/" },
+    { "name": { "en": "About", "id": "Tentang" }, "path": "/about" },
+    { "name": { "en": "Services", "id": "Layanan" }, "path": "/#services" },
+    { "name": { "en": "Partner", "id": "Mitra" }, "path": "/partners" }
+  ],
+  "footerQuickLinks": [
+    { "name": { "en": "Home", "id": "Beranda" }, "path": "/" },
+    { "name": { "en": "About", "id": "Tentang" }, "path": "/about" },
+    { "name": { "en": "Services", "id": "Layanan" }, "path": "#services" },
+    { "name": { "en": "Achievements", "id": "Pencapaian" }, "path": "#achievements" }
+  ],
+  "footerServices": [
+    { "name": { "en": "Data Analysis", "id": "Analisis Data" }, "path": "#" },
+    { "name": { "en": "IT Strategy & Consulting", "id": "Strategi & Konsultasi IT" }, "path": "#" },
+    { "name": { "en": "DevOps", "id": "DevOps" }, "path": "#" },
+    { "name": { "en": "IT Optimization", "id": "Optimasi IT" }, "path": "#" }
+  ]
+}

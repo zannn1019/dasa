@@ -1,0 +1,39 @@
+# --- IDE & OS ---
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# --- Logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# --- Environment ---
+.env
+.env.local
+.env.*
+!.env.example
+
+# --- Project Specifics ---
+
+# dasa-frontend (Nuxt)
+dasa-frontend/node_modules/
+dasa-frontend/.nuxt/
+dasa-frontend/.output/
+dasa-frontend/dist/
+
+# dasa-cms (Strapi)
+dasa-cms/node_modules/
+dasa-cms/.tmp/
+dasa-cms/.cache/
+dasa-cms/build/
+dasa-cms/dist/
+dasa-cms/public/uploads/
+!dasa-cms/public/uploads/.gitkeep
+
+# Docker
+.docker_data/

@@ -1,0 +1,19 @@
+{
+  "phone": {
+    "display": "(+62) 21 278 72101",
+    "link": "tel:+622127872101"
+  },
+  "email": {
+    "display": "info@dasa.com",
+    "link": "mailto:info@dasa.com"
+  },
+  "address": {
+    "street": "Jl. Muara No.111",
+    "area": "Tanjung Barat, Jagakarsa,",
+    "city": "Jakarta Selatan 12530 - Indonesia"
+  },
+  "officeHours": {
+    "en": "Monday to Friday From 9.00 AM to 6.00 PM",
+    "id": "Senin hingga Jumat Pukul 09.00 - 18.00 WIB"
+  }
+}

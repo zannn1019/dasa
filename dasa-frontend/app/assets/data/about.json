@@ -1,0 +1,152 @@
+{
+  "sectionTitle": {
+    "en": "About Company",
+    "id": "Tentang Perusahaan"
+  },
+  "title": {
+    "en": "Deliver the best technology solution",
+    "id": "Menghadirkan solusi teknologi terbaik"
+  },
+  "description": {
+    "en": "We focused on end to end IT solution to help a company improve their capabilities in facing today business challenges with technology.",
+    "id": "Kami berfokus pada solusi IT end-to-end untuk membantu perusahaan meningkatkan kapabilitas mereka dalam menghadapi tantangan bisnis masa kini dengan teknologi."
+  },
+  "stats": [
+    { "number": "25+", "label": { "en": "Clients", "id": "Klien" } },
+    { "number": "70+", "label": { "en": "Projects Delivered", "id": "Proyek Selesai" } },
+    { "number": "99%", "label": { "en": "Happy Clients", "id": "Klien Puas" } }
+  ],
+  "capabilities": [
+    { "icon": "wrench", "label": { "en": "Build", "id": "Bangun" } },
+    { "icon": "search", "label": { "en": "Research", "id": "Riset" } },
+    { "icon": "code", "label": { "en": "Develop", "id": "Kembangkan" } }
+  ],
+  "vision": {
+    "en": "To become Indonesia's leading integrated IT solutions provider, empowering businesses to thrive in the digital era through innovative technology.",
+    "id": "Menjadi penyedia solusi IT terintegrasi terdepan di Indonesia, memberdayakan bisnis untuk berkembang di era digital melalui teknologi inovatif."
+  },
+  "mission": [
+    {
+      "en": "Deliver end-to-end IT solutions tailored to each client's unique business needs.",
+      "id": "Memberikan solusi IT end-to-end yang disesuaikan dengan kebutuhan bisnis unik setiap klien."
+    },
+    {
+      "en": "Foster long-term partnerships built on trust, transparency, and measurable results.",
+      "id": "Membangun kemitraan jangka panjang yang dibangun di atas kepercayaan, transparansi, dan hasil yang terukur."
+    },
+    {
+      "en": "Continuously invest in talent and emerging technologies to stay ahead of the curve.",
+      "id": "Terus berinvestasi dalam talenta dan teknologi terkini untuk selalu selangkah lebih maju."
+    },
+    {
+      "en": "Empower clients to scale confidently through reliable digital infrastructure and strategy.",
+      "id": "Memberdayakan klien untuk berkembang dengan percaya diri melalui infrastruktur digital dan strategi yang andal."
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://daas.co.id/wp-content/uploads/2025/05/IMG_8462-1-scaled.jpg",
+      "alt": { "en": "Team collaboration session", "id": "Sesi kolaborasi tim" }
+    },
+    {
+      "src": "https://daas.co.id/wp-content/uploads/2025/05/IMG_8443-1-scaled.jpg",
+      "alt": { "en": "Company gathering", "id": "Gathering perusahaan" }
+    },
+    {
+      "src": "https://daas.co.id/wp-content/uploads/2025/05/IMG_8423-1-scaled.jpg",
+      "alt": { "en": "Technology workshop", "id": "Workshop teknologi" }
+    },
+    {
+      "src": "https://daas.co.id/wp-content/uploads/2025/05/IMG_8142-scaled.jpg",
+      "alt": { "en": "Client presentation", "id": "Presentasi klien" }
+    },
+    {
+      "src": "https://daas.co.id/wp-content/uploads/2025/05/IMG_7934-scaled.jpg",
+      "alt": { "en": "Conference event", "id": "Acara konferensi" }
+    },
+    {
+      "src": "https://daas.co.id/wp-content/uploads/2025/05/IMG_6753-scaled.jpg",
+      "alt": { "en": "Team building activity", "id": "Aktivitas team building" }
+    },
+    {
+      "src": "https://daas.co.id/wp-content/uploads/2025/05/IMG_6738-scaled.jpg",
+      "alt": { "en": "Office environment", "id": "Lingkungan kantor" }
+    },
+    {
+      "src": "https://daas.co.id/wp-content/uploads/2025/05/IMG_6272-1-scaled.jpg",
+      "alt": { "en": "Award ceremony", "id": "Upacara penghargaan" }
+    },
+    {
+      "src": "https://daas.co.id/wp-content/uploads/2025/05/IMG_6036-scaled.jpg",
+      "alt": { "en": "Project delivery", "id": "Pengiriman proyek" }
+    }
+  ],
+  "certifications": [
+    {
+      "name": "ISO 27001:2022",
+      "issuer": {
+        "en": "Information Security Management Systems",
+        "id": "Sistem Manajemen Keamanan Informasi"
+      },
+      "year": "2025",
+      "image": "https://daas.co.id/wp-content/uploads/2025/12/ISO-27001-2022.jpg"
+    },
+    {
+      "name": "ISO-IEC 20000-1:2018",
+      "issuer": {
+        "en": "Information Technology Service Management",
+        "id": "Manajemen Layanan Teknologi Informasi"
+      },
+      "year": "2025",
+      "image": "https://daas.co.id/wp-content/uploads/2025/12/ISO-IEC-20000-1.jpg"
+    },
+    {
+      "name": "ISO 9001:2015",
+      "issuer": { "en": "Quality Management Systems", "id": "Sistem Manajemen Mutu" },
+      "year": "2025",
+      "image": "https://daas.co.id/wp-content/uploads/2025/12/ISO-9001-2015.jpg"
+    },
+    {
+      "name": "ISO 14001:2015",
+      "issuer": { "en": "Environmental Management Systems", "id": "Sistem Manajemen Lingkungan" },
+      "year": "2025",
+      "image": "https://daas.co.id/wp-content/uploads/2025/07/ISO-140012015_DASA.jpg"
+    },
+    {
+      "name": "ISO 37001:2016",
+      "issuer": {
+        "en": "Anti-Bribery Management Systems",
+        "id": "Sistem Manajemen Anti Penyuapan"
+      },
+      "year": "2025",
+      "image": "https://daas.co.id/wp-content/uploads/2025/07/ISO-370012016_DASA.jpg"
+    },
+    {
+      "name": "ISO 45001:2018",
+      "issuer": {
+        "en": "Occupational Health and Safety Management Systems",
+        "id": "Sistem Manajemen Keselamatan dan Kesehatan Kerja"
+      },
+      "year": "2025",
+      "image": "https://daas.co.id/wp-content/uploads/2025/07/ISO-450012018_DASA.jpg"
+    },
+    {
+      "name": "ISO/IEC 15504-5:2012",
+      "issuer": {
+        "en": "Information Technology — Process Assessment",
+        "id": "Teknologi Informasi — Penilaian Proses"
+      },
+      "year": "2025",
+      "image": "https://daas.co.id/wp-content/uploads/2025/05/ISO-IEC-15504-52012.jpg"
+    },
+    {
+      "name": "ISO/IEC 25010:2011",
+      "issuer": {
+        "en": "Systems and Software Quality Requirements and Evaluation",
+        "id": "Persyaratan dan Evaluasi Kualitas Sistem dan Perangkat Lunak"
+      },
+      "year": "2025",
+      "image": "https://daas.co.id/wp-content/uploads/2025/05/ISO-IEC-25010-2011.jpg"
+    }
+  ]
+}

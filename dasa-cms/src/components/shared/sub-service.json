@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_sub_services",
+  "info": {
+    "displayName": "sub-service"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

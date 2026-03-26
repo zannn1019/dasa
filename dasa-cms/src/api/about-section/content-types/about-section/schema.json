@@ -1,0 +1,54 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_sections",
+  "info": {
+    "singularName": "about-section",
+    "pluralName": "about-sections",
+    "displayName": "About Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "vision": {
+      "type": "string"
+    },
+    "mission": {
+      "type": "component",
+      "component": "missions.mission",
+      "repeatable": true
+    },
+    "gallery": {
+      "type": "component",
+      "component": "shared.slider",
+      "repeatable": true
+    },
+    "certifications": {
+      "type": "component",
+      "component": "shared.certifications",
+      "repeatable": true
+    },
+    "stats": {
+      "type": "component",
+      "component": "shared.stat-item",
+      "repeatable": true
+    },
+    "capabilities": {
+      "type": "component",
+      "component": "shared.capability",
+      "repeatable": true
+    }
+  }
+}

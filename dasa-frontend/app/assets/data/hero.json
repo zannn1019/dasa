@@ -1,0 +1,20 @@
+{
+  "title": {
+    "en": "Most Reliable and Trusted Technology Company",
+    "id": "Perusahaan Teknologi Terpercaya dan Terdepan"
+  },
+  "subtitle": {
+    "en": "We are a company to help you with system integration, data integration technology implementation, big data implementation, development, and management services.",
+    "id": "Kami adalah perusahaan yang siap membantu Anda dalam integrasi sistem, implementasi teknologi integrasi data, implementasi big data, pengembangan, dan layanan manajemen."
+  },
+  "buttonText": {
+    "en": "Let's Connect",
+    "id": "Hubungi Kami"
+  },
+  "buttonLink": "/about#contact",
+  "slides": {
+    "en": ["System Integration", "Data Integration", "Technology"],
+    "id": ["Integrasi Sistem", "Integrasi Data", "Teknologi"]
+  },
+  "backgroundImage": "~/assets/images/hero-bg-2.png"
+}

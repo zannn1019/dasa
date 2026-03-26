@@ -1,0 +1,10 @@
+{
+  "ctaSection": {
+    "subtitle": { "en": "Get In Touch", "id": "Hubungi Kami" },
+    "title": { "en": "Let's connect with us", "id": "Mari terhubung dengan kami" },
+    "buttonText": { "en": "LET'S CONNECT", "id": "HUBUNGI KAMI" },
+    "buttonLink": "/about#contact"
+  },
+  "logo": "~/assets/images/Logo.png",
+  "backgroundText": "DASA"
+}

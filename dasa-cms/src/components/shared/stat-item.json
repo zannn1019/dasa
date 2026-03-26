@@ -1,0 +1,8 @@
+{
+  "collectionName": "components_sections_stat_items",
+  "info": { "displayName": "stat-item", "icon": "chart-bar" },
+  "attributes": {
+    "number": { "type": "string" },
+    "label": { "type": "string" }
+  }
+}
