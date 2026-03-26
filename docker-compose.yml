@@ -29,6 +29,7 @@ services:
     env_file:
       - .env
     environment:
+      - URL=https://n8n.talentaraya.co.id
       - PORT=${CMS_PORT:-1337}
       # These variables force Strapi to bridge to the PostgreSQL database mapped below!
       - DATABASE_CLIENT=postgres
