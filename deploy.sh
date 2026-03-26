@@ -11,16 +11,22 @@ fi
 echo "🚀 Starting Deployment..."
 
 # 2. Build CMS
-echo "📦 Building CMS..."
+echo "📦 Checking CMS..."
 cd dasa-cms
-npm install
+# Only install if package.json is newer than node_modules
+if [ package.json -nt node_modules ]; then
+  npm ci
+fi
 npm run build
 cd ..
 
 # 3. Build Frontend
-echo "🌐 Building Frontend..."
+echo "🌐 Checking Frontend..."
 cd dasa-frontend
-npm install
+# Only install if package.json is newer than node_modules
+if [ package.json -nt node_modules ]; then
+  npm ci
+fi
 npm run build
 cd ..
 
