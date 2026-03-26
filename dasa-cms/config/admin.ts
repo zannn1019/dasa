@@ -22,9 +22,9 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Admin => 
   preview: {
     enabled: true,
     config: {
-      allowedOrigins: ['http://localhost:3000'],
+      allowedOrigins: [env('STRAPI_URL', 'http://localhost:3000')],
       async handler(uid, { documentId, locale, status }) {
-        return `http://localhost:3000/?preview=true&uid=${uid}`;
+        return `${env('STRAPI_URL', 'http://localhost:3000')}/?preview=true&uid=${uid}`;
       },
     },
   },
