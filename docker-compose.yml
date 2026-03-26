@@ -25,7 +25,7 @@ services:
     container_name: dasa-cms
     restart: unless-stopped
     ports:
-      - "1337:1337"d
+      - "1337:1337"
     env_file:
       - .env
     environment:
