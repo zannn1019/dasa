@@ -10,6 +10,7 @@ services:
     env_file:
       - .env
     environment:
+      - PORT=3000
       - STRAPI_URL=http://localhost:1337
       - NUXT_STRAPI_URL=http://cms:1337
     networks:
@@ -24,10 +25,11 @@ services:
     container_name: dasa-cms
     restart: unless-stopped
     ports:
-      - "1337:1337"
+      - "1337:1337"d
     env_file:
       - .env
     environment:
+      - PORT=${CMS_PORT:-1337}
       # These variables force Strapi to bridge to the PostgreSQL database mapped below!
       - DATABASE_CLIENT=postgres
       - DATABASE_HOST=db
