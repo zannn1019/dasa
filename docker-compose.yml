@@ -54,6 +54,8 @@ services:
       POSTGRES_USER: strapi
       POSTGRES_PASSWORD: strapiDatabaseSecret!
       POSTGRES_DB: strapi
+    ports:
+      - "5432:5432"
     volumes:
       # A safe virtual isolated volume just for the Postgres database engine
       - dasa-postgres-data:/var/lib/postgresql/data
