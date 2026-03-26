@@ -39,8 +39,8 @@ services:
       - DATABASE_PASSWORD=strapiDatabaseSecret!
       - DATABASE_SSL=false
     volumes:
-      # Uploaded media needs persisting
-      - ./dasa-cms/public/uploads:/opt/app/public/uploads
+      # Mount the entire public directory so Strapi can manage uploads AND temporary backup folders
+      - ./dasa-cms/public:/opt/app/public
     networks:
       - dasa-network
     depends_on:
