@@ -22,6 +22,9 @@
     "description": {
       "type": "text"
     },
+    "aboutPageDescription": {
+      "type": "text"
+    },
     "vision": {
       "type": "string"
     },

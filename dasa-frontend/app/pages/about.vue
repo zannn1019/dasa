@@ -51,6 +51,7 @@
 
   const content = computed(() => ({
     description: (aboutData.value.description as any) || "",
+    aboutPageDescription: (aboutData.value.aboutPageDescription as any) || "",
     vision: (aboutData.value.vision as any) || "",
     mission: ((aboutData.value.mission as any) || []).map((m: any) => m.mission),
     gallery: ((aboutData.value.gallery as any) || []).map((g: any) => ({
@@ -140,6 +141,7 @@
     <AboutHero
       :ref="(el) => (heroRef = (el as any)?.$el ?? (el as HTMLElement))"
       :description="content.description"
+      :about-page-description="content.aboutPageDescription"
     />
 
     <AboutSubnav

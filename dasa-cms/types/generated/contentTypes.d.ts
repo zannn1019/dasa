@@ -441,6 +441,7 @@ export interface ApiAboutSectionAboutSection extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    aboutPageDescription: Schema.Attribute.Text;
     capabilities: Schema.Attribute.Component<'shared.capability', true>;
     certifications: Schema.Attribute.Component<'shared.certifications', true>;
     createdAt: Schema.Attribute.DateTime;
