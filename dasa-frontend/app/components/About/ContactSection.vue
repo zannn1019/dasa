@@ -17,12 +17,10 @@
     phone: ContactPhone;
     email: ContactEmail;
     address: ContactAddress;
-    officeHours: { en: string; id: string };
+    officeHours: string;
   }
 
   defineProps<{ contact: ContactData }>();
-
-  const { t } = useLanguage();
 
   const { form, formStatus, handleSubmit } = useContactForm();
 </script>
@@ -31,9 +29,9 @@
   <section class="ap-section ap-contact">
     <div class="container">
       <div class="ap-section__header">
-        <span class="ap-label">{{ t({ en: "Contact", id: "Kontak" }) }}</span>
+        <span class="ap-label">Contact</span>
         <h2 class="ap-section__title">
-          {{ t({ en: "Let's connect", id: "Mari terhubung" }) }}
+          Let's connect
         </h2>
       </div>
 
@@ -41,7 +39,7 @@
         <form class="ap-contact__form" @submit.prevent="handleSubmit">
           <div class="ap-contact__field">
             <label for="ap-name" class="ap-contact__label">
-              {{ t({ en: "Your name", id: "Nama Anda" }) }}
+              Your name
             </label>
             <input
               id="ap-name"
@@ -55,7 +53,7 @@
 
           <div class="ap-contact__field">
             <label for="ap-email" class="ap-contact__label">
-              {{ t({ en: "Email address", id: "Alamat email" }) }}
+              Email address
             </label>
             <input
               id="ap-email"
@@ -69,7 +67,7 @@
 
           <div class="ap-contact__field">
             <label for="ap-message" class="ap-contact__label">
-              {{ t({ en: "Message", id: "Pesan" }) }}
+              Message
             </label>
             <textarea
               id="ap-message"
@@ -77,21 +75,19 @@
               rows="5"
               required
               class="ap-contact__input ap-contact__textarea"
-              :placeholder="
-                t({ en: 'Tell us about your project…', id: 'Ceritakan tentang proyek Anda…' })
-              "
+              placeholder="Tell us about your project…"
             />
           </div>
 
           <button type="submit" class="ap-contact__submit" :disabled="formStatus === 'sending'">
             <span v-if="formStatus === 'idle' || formStatus === 'error'">
-              {{ t({ en: "Send message →", id: "Kirim pesan →" }) }}
+              Send message →
             </span>
             <span v-else-if="formStatus === 'sending'">
-              {{ t({ en: "Sending…", id: "Mengirim…" }) }}
+              Sending…
             </span>
             <span v-else-if="formStatus === 'sent'">
-              {{ t({ en: "✓ Message sent!", id: "✓ Pesan terkirim!" }) }}
+              ✓ Message sent!
             </span>
           </button>
         </form>
@@ -113,7 +109,7 @@
               </svg>
             </div>
             <div>
-              <span class="ap-contact__info-label">{{ t({ en: "Phone", id: "Telepon" }) }}</span>
+              <span class="ap-contact__info-label">Phone</span>
               <a :href="contact.phone.link" class="ap-contact__info-value">
                 {{ contact.phone.display }}
               </a>
@@ -159,7 +155,7 @@
               </svg>
             </div>
             <div>
-              <span class="ap-contact__info-label">{{ t({ en: "Address", id: "Alamat" }) }}</span>
+              <span class="ap-contact__info-label">Address</span>
               <span class="ap-contact__info-value">
                 {{ contact.address.street }},
                 {{ contact.address.area }}
@@ -184,9 +180,9 @@
             </div>
             <div>
               <span class="ap-contact__info-label">
-                {{ t({ en: "Office hours", id: "Jam kerja" }) }}
+                Office hours
               </span>
-              <span class="ap-contact__info-value">{{ t(contact.officeHours) }}</span>
+              <span class="ap-contact__info-value">{{ contact.officeHours }}</span>
             </div>
           </div>
         </div>

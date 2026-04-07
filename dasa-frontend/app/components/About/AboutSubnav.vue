@@ -8,8 +8,6 @@
   }>();
 
   defineEmits<{ scrollTo: [id: string] }>();
-
-  const { t } = useLanguage();
 </script>
 
 <template>
@@ -23,7 +21,7 @@
         :aria-current="activeSection === s.id ? 'true' : undefined"
         @click="$emit('scrollTo', s.id)"
       >
-        {{ t(s.label) }}
+        {{ s.label.en }}
       </button>
     </div>
   </nav>

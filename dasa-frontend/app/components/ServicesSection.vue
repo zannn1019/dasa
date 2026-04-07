@@ -1,7 +1,6 @@
 <script setup lang="ts">
   import contentData from "~/assets/content.json";
 
-  const { t } = useLanguage();
   const { getPageData, getAbsoluteImageUrl } = useCms();
 
   const { data: servicesResponse } = await getPageData("services", { image: true });

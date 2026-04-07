@@ -66,10 +66,10 @@
   }));
 
   const sections = [
-    { id: "vision", label: { en: "Vision & Mission", id: "Visi & Misi" } },
-    { id: "gallery", label: { en: "Gallery", id: "Galeri" } },
-    { id: "certifications", label: { en: "Certifications", id: "Sertifikasi" } },
-    { id: "contact", label: { en: "Contact", id: "Kontak" } },
+    { id: "vision", label: { en: "Vision & Mission" } },
+    { id: "gallery", label: { en: "Gallery" } },
+    { id: "certifications", label: { en: "Certifications" } },
+    { id: "contact", label: { en: "Contact" } },
   ];
 
   const pageRef = ref<HTMLElement | null>(null);

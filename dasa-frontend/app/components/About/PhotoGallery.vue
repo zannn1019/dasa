@@ -6,17 +6,15 @@
 
   defineProps<{ photos: GalleryItem[] }>();
   defineEmits<{ openLightbox: [src: string, alt: string] }>();
-
-  const { t } = useLanguage();
 </script>
 
 <template>
   <section class="ap-gallery">
     <div class="container">
       <div class="ap-section__header">
-        <span class="ap-label">{{ t({ en: "Gallery", id: "Galeri" }) }}</span>
+        <span class="ap-label">Gallery</span>
         <h2 class="ap-section__title">
-          {{ t({ en: "Behind the scenes", id: "Di balik layar" }) }}
+          Behind the scenes
         </h2>
       </div>
 

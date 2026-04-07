@@ -1,7 +1,6 @@
 <script setup lang="ts">
   import navigationData from "~/assets/data/navigation.json";
 
-  const { locale, toggleLocale, t } = useLanguage();
   const navLinks = navigationData.mainMenu;
 
   const isScrolled = ref(false);
@@ -131,18 +130,15 @@
               "
               @click.capture="(e: MouseEvent) => handleNavClick(e, link.path)"
             >
-              <span data-lang>{{ t(link.name) }}</span>
+              <span data-lang>{{ link.name }}</span>
             </NuxtLink>
           </li>
         </ul>
       </nav>
 
       <div ref="actionsRef" class="actions">
-        <BaseButton variant="secondary" size="sm" @click="toggleLocale">
-          {{ locale.toUpperCase() }}
-        </BaseButton>
         <BaseButton variant="primary" size="sm" @click="scrollToSection('#contact')">
-          {{ locale === "en" ? "Connect" : "Hubungi" }}
+          Connect
         </BaseButton>
       </div>
 
@@ -171,7 +167,7 @@
                 @click.capture="(e: MouseEvent) => handleMobileNavClick(e, link.path)"
               >
                 <span class="fullscreen-menu__link-number">0{{ index + 1 }}</span>
-                <span class="fullscreen-menu__link-text" data-lang>{{ t(link.name) }}</span>
+                <span class="fullscreen-menu__link-text" data-lang>{{ link.name }}</span>
               </NuxtLink>
             </li>
           </ul>
@@ -179,19 +175,7 @@
 
         <div class="fullscreen-menu__actions">
           <BaseButton variant="primary" size="lg" @click="scrollToSection('#contact', true)">
-            {{ locale === "en" ? "Let's Connect" : "Hubungi Kami" }}
-          </BaseButton>
-          <BaseButton
-            variant="secondary"
-            size="md"
-            @click="
-              () => {
-                toggleLocale();
-                toggleMobileMenu();
-              }
-            "
-          >
-            {{ locale.toUpperCase() }}
+            Let's Connect
           </BaseButton>
         </div>
 

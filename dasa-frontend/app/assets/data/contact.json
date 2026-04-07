@@ -12,8 +12,5 @@
     "area": "Tanjung Barat, Jagakarsa,",
     "city": "Jakarta Selatan 12530 - Indonesia"
   },
-  "officeHours": {
-    "en": "Monday to Friday From 9.00 AM to 6.00 PM",
-    "id": "Senin hingga Jumat Pukul 09.00 - 18.00 WIB"
-  }
+  "officeHours": "Monday to Friday From 9.00 AM to 6.00 PM"
 }

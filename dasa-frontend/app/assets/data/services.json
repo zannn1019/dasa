@@ -1,139 +1,96 @@
 {
-  "title": { "en": "Services", "id": "Layanan" },
-  "subtitle": {
-    "en": "What we deliver to customers",
-    "id": "Apa yang kami berikan kepada pelanggan"
-  },
-  "watermark": { "en": "SERVICES", "id": "LAYANAN" },
+  "title": "Services",
+  "subtitle": "What we deliver to customers",
+  "watermark": "SERVICES",
   "items": [
     {
-      "title": { "en": "Dev Ops", "id": "Dev Ops" },
-      "description": {
-        "en": "Streamline your development lifecycle with automated CI/CD pipelines, containerization, and robust cloud infrastructure management.",
-        "id": "Sederhanakan siklus pengembangan Anda dengan pipeline CI/CD otomatis, kontainerisasi, dan manajemen infrastruktur cloud yang andal."
-      },
-      "overview": {
-        "en": "DASA DevOps services bridge the gap between development and operations, allowing your teams to deliver software faster and more reliably. We implement best-in-class automation, monitoring, and infrastructure-as-code solutions tailored to your environment.",
-        "id": "Layanan DevOps DASA menjembatani kesenjangan antara pengembangan dan operasional, memungkinkan tim Anda menghadirkan perangkat lunak lebih cepat dan andal."
-      },
+      "title": "Dev Ops",
+      "description": "Streamline your development lifecycle with automated CI/CD pipelines, containerization, and robust cloud infrastructure management.",
+      "overview": "DASA DevOps services bridge the gap between development and operations, allowing your teams to deliver software faster and more reliably. We implement best-in-class automation, monitoring, and infrastructure-as-code solutions tailored to your environment.",
       "image": "~/assets/images/service-1.png",
       "link": "/services/devops",
       "subServices": [
         {
-          "title": { "en": "CI/CD Pipelines", "id": "Pipeline CI/CD" },
-          "description": {
-            "en": "Automate your build, test, and deployment processes to reduce manual effort and accelerate release cycles.",
-            "id": "Otomatiskan proses build, test, dan deploy untuk mengurangi upaya manual dan mempercepat siklus rilis."
-          }
+          "title": "CI/CD Pipelines",
+          "description": "Automate your build, test, and deployment processes to reduce manual effort and accelerate release cycles."
         },
         {
-          "title": { "en": "Containerization", "id": "Kontainerisasi" },
-          "description": {
-            "en": "Package and deploy your applications using Docker and Kubernetes for consistent, scalable environments.",
-            "id": "Paketkan dan deploy aplikasi Anda menggunakan Docker dan Kubernetes untuk lingkungan yang konsisten dan skalabel."
-          }
+          "title": "Containerization",
+          "description": "Package and deploy your applications using Docker and Kubernetes for consistent, scalable environments."
         },
         {
-          "title": { "en": "Infrastructure as Code", "id": "Infrastruktur sebagai Kode" },
-          "description": {
-            "en": "Manage cloud infrastructure programmatically using Terraform and Ansible for repeatability and version control.",
-            "id": "Kelola infrastruktur cloud secara programatik menggunakan Terraform dan Ansible untuk repeatability dan version control."
-          }
+          "title": "Infrastructure as Code",
+          "description": "Manage cloud infrastructure programmatically using Terraform and Ansible for repeatability and version control."
         },
         {
-          "title": { "en": "Monitoring & Alerting", "id": "Pemantauan & Peringatan" },
-          "description": {
-            "en": "Gain full visibility into your systems with real-time monitoring, dashboards, and proactive alerting.",
-            "id": "Dapatkan visibilitas penuh ke sistem Anda dengan pemantauan real-time, dashboard, dan peringatan proaktif."
-          }
+          "title": "Monitoring & Alerting",
+          "description": "Gain full visibility into your systems with real-time monitoring, dashboards, and proactive alerting."
         }
       ],
-      "technologies": ["Docker", "Kubernetes", "Terraform", "Jenkins", "Ansible", "Prometheus"]
+      "technologies": [
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Jenkins",
+        "Ansible",
+        "Prometheus"
+      ]
     },
     {
-      "title": { "en": "Data Integration", "id": "Integrasi Data" },
-      "description": {
-        "en": "Connect and synchronize disparate data sources into a unified, reliable stream of information for your business processes.",
-        "id": "Hubungkan dan sinkronkan berbagai sumber data menjadi aliran informasi yang terpadu dan andal untuk proses bisnis Anda."
-      },
-      "overview": {
-        "en": "Our Data Integration services unify your scattered data landscape into a coherent, reliable pipeline. We help you eliminate data silos, improve data quality, and ensure your business processes have access to accurate, timely information.",
-        "id": "Layanan Integrasi Data kami menyatukan lanskap data tersebar Anda menjadi pipeline yang koheren dan andal."
-      },
+      "title": "Data Integration",
+      "description": "Connect and synchronize disparate data sources into a unified, reliable stream of information for your business processes.",
+      "overview": "Our Data Integration services unify your scattered data landscape into a coherent, reliable pipeline. We help you eliminate data silos, improve data quality, and ensure your business processes have access to accurate, timely information.",
       "image": "~/assets/images/service-2.png",
       "link": "/services/data-integration",
       "subServices": [
         {
-          "title": { "en": "ETL / ELT Pipelines", "id": "Pipeline ETL / ELT" },
-          "description": {
-            "en": "Design and build robust extract, transform, and load pipelines that move data reliably between systems.",
-            "id": "Rancang dan bangun pipeline ETL/ELT yang andal untuk memindahkan data antar sistem."
-          }
+          "title": "ETL / ELT Pipelines",
+          "description": "Design and build robust extract, transform, and load pipelines that move data reliably between systems."
         },
         {
-          "title": { "en": "API Integration", "id": "Integrasi API" },
-          "description": {
-            "en": "Connect disparate applications and services through secure, well-documented API integrations.",
-            "id": "Hubungkan berbagai aplikasi dan layanan melalui integrasi API yang aman dan terdokumentasi."
-          }
+          "title": "API Integration",
+          "description": "Connect disparate applications and services through secure, well-documented API integrations."
         },
         {
-          "title": { "en": "Data Quality Management", "id": "Manajemen Kualitas Data" },
-          "description": {
-            "en": "Implement validation rules and cleansing routines to ensure only high-quality data reaches your downstream systems.",
-            "id": "Terapkan aturan validasi dan pembersihan untuk memastikan hanya data berkualitas tinggi yang mencapai sistem hilir Anda."
-          }
+          "title": "Data Quality Management",
+          "description": "Implement validation rules and cleansing routines to ensure only high-quality data reaches your downstream systems."
         },
         {
-          "title": { "en": "Real-Time Streaming", "id": "Streaming Real-Time" },
-          "description": {
-            "en": "Enable event-driven architectures and real-time data processing with Apache Kafka and similar technologies.",
-            "id": "Aktifkan arsitektur event-driven dan pemrosesan data real-time dengan Apache Kafka dan teknologi serupa."
-          }
+          "title": "Real-Time Streaming",
+          "description": "Enable event-driven architectures and real-time data processing with Apache Kafka and similar technologies."
         }
       ],
-      "technologies": ["Apache Kafka", "Apache Spark", "Talend", "MuleSoft", "Informatica", "dbt"]
+      "technologies": [
+        "Apache Kafka",
+        "Apache Spark",
+        "Talend",
+        "MuleSoft",
+        "Informatica",
+        "dbt"
+      ]
     },
     {
-      "title": { "en": "Database Platform", "id": "Platform Database" },
-      "description": {
-        "en": "Design and optimize high-performance database systems that ensure data integrity, security, and high availability.",
-        "id": "Rancang dan optimalkan sistem database berkinerja tinggi yang menjamin integritas data, keamanan, dan ketersediaan tinggi."
-      },
-      "overview": {
-        "en": "DASA's Database Platform services cover the full lifecycle of enterprise database management — from initial design and migration to ongoing performance tuning and high-availability configuration. We work with Oracle, PostgreSQL, MySQL, and other leading platforms.",
-        "id": "Layanan Platform Database DASA mencakup siklus penuh manajemen database enterprise — dari desain awal dan migrasi hingga tuning performa berkelanjutan dan konfigurasi high-availability."
-      },
+      "title": "Database Platform",
+      "description": "Design and optimize high-performance database systems that ensure data integrity, security, and high availability.",
+      "overview": "DASA's Database Platform services cover the full lifecycle of enterprise database management \u2014 from initial design and migration to ongoing performance tuning and high-availability configuration. We work with Oracle, PostgreSQL, MySQL, and other leading platforms.",
       "image": "~/assets/images/service-3.png",
       "link": "/services/database-platform",
       "subServices": [
         {
-          "title": { "en": "Implementation", "id": "Implementasi" },
-          "description": {
-            "en": "Install, configure, and orchestrate database migrations and deployments to production with zero-downtime strategies.",
-            "id": "Instalasi, konfigurasi, dan orkestrasi migrasi database serta deployment ke produksi dengan strategi zero-downtime."
-          }
+          "title": "Implementation",
+          "description": "Install, configure, and orchestrate database migrations and deployments to production with zero-downtime strategies."
         },
         {
-          "title": { "en": "Maintenance", "id": "Pemeliharaan" },
-          "description": {
-            "en": "Preventive maintenance, patching, and configuration management to keep your databases healthy and performant.",
-            "id": "Pemeliharaan preventif, patching, dan manajemen konfigurasi untuk menjaga database Anda sehat dan berkinerja."
-          }
+          "title": "Maintenance",
+          "description": "Preventive maintenance, patching, and configuration management to keep your databases healthy and performant."
         },
         {
-          "title": { "en": "Monitoring", "id": "Pemantauan" },
-          "description": {
-            "en": "Continuous monitoring of database health, performance metrics, and automatic alerting on anomalies or errors.",
-            "id": "Pemantauan berkelanjutan terhadap kesehatan database, metrik performa, dan peringatan otomatis pada anomali atau error."
-          }
+          "title": "Monitoring",
+          "description": "Continuous monitoring of database health, performance metrics, and automatic alerting on anomalies or errors."
         },
         {
-          "title": { "en": "Performance Tuning", "id": "Optimasi Performa" },
-          "description": {
-            "en": "Query optimization, index management, and resource planning to ensure your databases run at peak efficiency.",
-            "id": "Optimasi query, manajemen indeks, dan perencanaan sumber daya untuk memastikan database berjalan pada efisiensi puncak."
-          }
+          "title": "Performance Tuning",
+          "description": "Query optimization, index management, and resource planning to ensure your databases run at peak efficiency."
         }
       ],
       "technologies": [
@@ -146,48 +103,37 @@
       ]
     },
     {
-      "title": { "en": "Development", "id": "Pengembangan" },
-      "description": {
-        "en": "Build scalable, robust applications using modern frameworks and industry best practices tailored to your specific requirements.",
-        "id": "Bangun aplikasi yang skalabel dan tangguh menggunakan framework modern dan praktik terbaik industri yang disesuaikan dengan kebutuhan spesifik Anda."
-      },
-      "overview": {
-        "en": "Our Development team delivers end-to-end software solutions — from requirements analysis and architecture design through to delivery and post-launch support. We build web platforms, internal tools, and integrations using modern, battle-tested technologies.",
-        "id": "Tim Development kami menghadirkan solusi perangkat lunak end-to-end — dari analisis kebutuhan dan desain arsitektur hingga pengiriman dan dukungan pasca-peluncuran."
-      },
+      "title": "Development",
+      "description": "Build scalable, robust applications using modern frameworks and industry best practices tailored to your specific requirements.",
+      "overview": "Our Development team delivers end-to-end software solutions \u2014 from requirements analysis and architecture design through to delivery and post-launch support. We build web platforms, internal tools, and integrations using modern, battle-tested technologies.",
       "image": "~/assets/images/service-4.png",
       "link": "/services/development",
       "subServices": [
         {
-          "title": { "en": "Web Application", "id": "Aplikasi Web" },
-          "description": {
-            "en": "Build modern, responsive web applications using frameworks like Vue, React, and Next.js backed by robust APIs.",
-            "id": "Bangun aplikasi web modern dan responsif menggunakan framework seperti Vue, React, dan Next.js didukung API yang andal."
-          }
+          "title": "Web Application",
+          "description": "Build modern, responsive web applications using frameworks like Vue, React, and Next.js backed by robust APIs."
         },
         {
-          "title": { "en": "Backend & API", "id": "Backend & API" },
-          "description": {
-            "en": "Design scalable RESTful and GraphQL APIs with proper authentication, rate limiting, and documentation.",
-            "id": "Rancang API RESTful dan GraphQL yang skalabel dengan autentikasi yang tepat, rate limiting, dan dokumentasi."
-          }
+          "title": "Backend & API",
+          "description": "Design scalable RESTful and GraphQL APIs with proper authentication, rate limiting, and documentation."
         },
         {
-          "title": { "en": "System Integration", "id": "Integrasi Sistem" },
-          "description": {
-            "en": "Connect legacy systems with modern platforms through custom middleware, adapters, and integration layers.",
-            "id": "Hubungkan sistem lama dengan platform modern melalui middleware, adapter, dan lapisan integrasi khusus."
-          }
+          "title": "System Integration",
+          "description": "Connect legacy systems with modern platforms through custom middleware, adapters, and integration layers."
         },
         {
-          "title": { "en": "Quality Assurance", "id": "Jaminan Kualitas" },
-          "description": {
-            "en": "Automated testing suites, code reviews, and continuous quality checks ensure software reliability and maintainability.",
-            "id": "Suite pengujian otomatis, review kode, dan pemeriksaan kualitas berkelanjutan memastikan keandalan dan maintainability perangkat lunak."
-          }
+          "title": "Quality Assurance",
+          "description": "Automated testing suites, code reviews, and continuous quality checks ensure software reliability and maintainability."
         }
       ],
-      "technologies": ["Vue.js", "React", "Node.js", "Laravel", "Python", "PostgreSQL"]
+      "technologies": [
+        "Vue.js",
+        "React",
+        "Node.js",
+        "Laravel",
+        "Python",
+        "PostgreSQL"
+      ]
     }
   ]
 }

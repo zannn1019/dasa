@@ -1,8 +1,8 @@
 {
   "ctaSection": {
-    "subtitle": { "en": "Get In Touch", "id": "Hubungi Kami" },
-    "title": { "en": "Let's connect with us", "id": "Mari terhubung dengan kami" },
-    "buttonText": { "en": "LET'S CONNECT", "id": "HUBUNGI KAMI" },
+    "subtitle": "Get In Touch",
+    "title": "Let's connect with us",
+    "buttonText": "LET'S CONNECT",
     "buttonLink": "/about#contact"
   },
   "logo": "~/assets/images/Logo.png",

@@ -3,17 +3,15 @@
     vision: string;
     mission: string[];
   }>();
-
-  const { t } = useLanguage();
 </script>
 
 <template>
   <section class="ap-vision-mission">
     <div class="container">
       <div class="ap-section__header">
-        <span class="ap-label">{{ t({ en: "Vision & Mission", id: "Visi & Misi" }) }}</span>
+        <span class="ap-label">Vision & Mission</span>
         <h2 class="ap-section__title">
-          {{ t({ en: "Where we're headed", id: "Ke mana kami menuju" }) }}
+          Where we're headed
         </h2>
       </div>
 
@@ -36,7 +34,7 @@
               <circle cx="12" cy="12" r="3" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </div>
-          <h3 class="ap-card__heading">{{ t({ en: "Our Vision", id: "Visi Kami" }) }}</h3>
+          <h3 class="ap-card__heading">Our Vision</h3>
           <p class="ap-vision__text">{{ vision }}</p>
         </div>
 
@@ -59,7 +57,7 @@
                 <path d="M12 8v4l3 3" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <h3 class="ap-card__heading">{{ t({ en: "Our Mission", id: "Misi Kami" }) }}</h3>
+            <h3 class="ap-card__heading">Our Mission</h3>
           </div>
           <ul class="ap-mission__list">
             <li v-for="(item, i) in mission" :key="i" class="ap-mission__item">

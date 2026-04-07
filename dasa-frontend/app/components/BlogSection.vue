@@ -3,10 +3,6 @@
 
   const { getPageData } = useCms();
 
-  const data = ref<any[]>([]);
-  const pending = ref(true);
-  const cmsError = ref(false);
-
   const sectionRef = ref<HTMLElement | null>(null);
   const gridItemsRef = shallowRef<HTMLElement[]>([]);
   const imagesRef = shallowRef<HTMLElement[]>([]);
@@ -29,7 +25,7 @@
     }
   }
 
-  onMounted(async () => {
+  const { data, pending, error: cmsError } = await useAsyncData("blog-section", async () => {
     try {
       const { data: cmsData } = await getPageData("blog-setting");
       const raw = cmsData.value as any;
@@ -37,21 +33,21 @@
 
       if (!attrs?.rssFeedUrl) {
         console.warn("[BlogSection] No blog-setting data from CMS, skipping fetch.");
-        cmsError.value = true;
-        return;
+        return [];
       }
 
-      data.value = await getMediumData(attrs.rssFeedUrl, attrs.itemsToShow ?? 2);
+      return await getMediumData(attrs.rssFeedUrl, attrs.itemsToShow ?? 2);
     } catch (err) {
       console.error("[BlogSection] Failed to load blog config from CMS:", err);
-      cmsError.value = true;
-    } finally {
-      pending.value = false;
+      return [];
     }
+  });
 
-    nextTick(() => {
+  onMounted(async () => {
+    await nextTick();
+    if (data.value && data.value.length > 0) {
       initAnimations({ sectionRef, gridItemsRef, imagesRef });
-    });
+    }
   });
 
   onUnmounted(() => {
@@ -63,10 +59,10 @@
   <section class="blog-section" ref="sectionRef">
     <div class="container-fluid">
       <div
-        v-for="(item, index) in data"
+        v-for="(item, index) in (data as any[])"
         :key="item.link"
         class="grid-container"
-        :class="{ reverse: index % 2 !== 0 }"
+        :class="{ reverse: (index as number) % 2 !== 0 }"
         :style="{ '--thumb': `url('${item.thumbnail}')` }"
         ref="gridItemsRef"
       >

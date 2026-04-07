@@ -1,6 +1,6 @@
 export interface SubnavSection {
   id: string;
-  label: { en: string; id: string };
+  label: { en: string; id?: string };
 }
 
 export function useAboutSubnav(sections: SubnavSection[]) {

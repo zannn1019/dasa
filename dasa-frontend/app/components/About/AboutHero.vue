@@ -1,7 +1,5 @@
 <script setup lang="ts">
   defineProps<{ description: string }>();
-
-  const { t } = useLanguage();
 </script>
 
 <template>
@@ -16,17 +14,17 @@
     <div class="container ap-hero__body">
       <div class="ap-hero__head">
         <span class="ap-hero__tag ap-label">
-          {{ t({ en: "Who We Are", id: "Siapa Kami" }) }}
+          Who We Are
         </span>
         <div class="ap-hero__divider" />
       </div>
 
       <h1 class="ap-hero__title">
-        {{ t({ en: "Building tomorrow's", id: "Membangun" }) }}
+        Building tomorrow's
         <br />
-        <em>{{ t({ en: "digital infrastructure", id: "infrastruktur digital" }) }}</em>
+        <em>digital infrastructure</em>
         <br />
-        {{ t({ en: "today", id: "masa depan" }) }}
+        today
       </h1>
 
       <p class="ap-hero__desc">{{ description }}</p>

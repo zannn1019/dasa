@@ -2,7 +2,6 @@ type PopulateObject = Record<string, any>;
 
 export const useCms = () => {
   const { find } = useStrapi();
-  const { locale } = useLanguage();
   const config = useRuntimeConfig();
 
   // Get Strapi base URL from runtime configuration
@@ -24,9 +23,8 @@ export const useCms = () => {
   };
 
   /**
-   * Fetch page data with locale and optional nested populate support.
-   * Automatically refreshes when locale changes (no page reload needed).
-   * Falls back to 'en' locale if current locale data doesn't exist.
+   * Fetch page data with optional nested populate support.
+   * Uses English locale by default.
    * @param contentType - The Strapi content type (e.g., 'pages', 'hero-section')
    * @param populateList - Optional populate object for nested relations/components
    * @example
@@ -44,7 +42,7 @@ export const useCms = () => {
   const getPageData = async (contentType: string, params: PopulateObject = {}) => {
     // Generate cache key
     const populateKey = JSON.stringify(params) || "default";
-    const asyncDataKey = computed(() => `${contentType}-${populateKey}-${locale.value}`);
+    const asyncDataKey = computed(() => `${contentType}-${populateKey}`);
 
     const reservedKeys = [
       "pagination",
@@ -54,7 +52,7 @@ export const useCms = () => {
       "fields",
       "populate",
     ];
-    const queryPayload: Record<string, any> = { locale: locale.value };
+    const queryPayload: Record<string, any> = { locale: "en" };
     const implicitPopulate = { ...params };
 
     for (const key of reservedKeys) {
@@ -88,16 +86,11 @@ export const useCms = () => {
 
       if (!data || !data.data) {
         console.warn(
-          `No data found for locale '${locale.value}' in '${contentType}', falling back to 'en'`,
+          `No data found for English locale in '${contentType}'`,
         );
-        return find(contentType as any, { ...queryPayload, locale: "en" });
       }
 
       return data;
-    });
-
-    watch(locale, () => {
-      result.refresh();
     });
 
     return result;

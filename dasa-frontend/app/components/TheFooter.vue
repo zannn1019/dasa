@@ -3,7 +3,6 @@
   import contactData from "~/assets/data/contact.json";
   import navigationData from "~/assets/data/navigation.json";
 
-  const { t } = useLanguage();
   const { getPageData } = useCms();
   const { data: data } = await getPageData("site-setting", {
     contact: true,
@@ -19,9 +18,9 @@
 
   const siteData = computed(() => data?.value);
   const cta = computed(() => ({
-    subtitle: t(footerData.ctaSection.subtitle),
-    title: t(footerData.ctaSection.title),
-    buttonText: t(footerData.ctaSection.buttonText),
+    subtitle: footerData.ctaSection.subtitle,
+    title: footerData.ctaSection.title,
+    buttonText: footerData.ctaSection.buttonText,
     buttonLink: footerData.ctaSection.buttonLink,
   }));
 
@@ -34,7 +33,7 @@
       phone: contactData.phone.display,
       email: contactData.email.display,
       address: `${contactData.address.street}\n${contactData.address.area}\n${contactData.address.city}`,
-      officeHours: t(contactData.officeHours),
+      officeHours: contactData.officeHours,
     };
   });
   const nav = navigationData;
@@ -122,7 +121,7 @@
             <h3>Quick Links</h3>
             <ul>
               <li v-for="link in nav.footerQuickLinks" :key="link.path">
-                <NuxtLink :to="link.path" data-lang>{{ t(link.name) }}</NuxtLink>
+                <NuxtLink :to="link.path" data-lang>{{ link.name }}</NuxtLink>
               </li>
             </ul>
           </div>

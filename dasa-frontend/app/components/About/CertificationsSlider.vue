@@ -9,49 +9,23 @@
   const props = defineProps<{ certifications: Certification[] }>();
   defineEmits<{ openLightbox: [src: string, alt: string] }>();
 
-  const { t } = useLanguage();
-
   const activeCert = ref(0);
 
-  const certDescriptions: Record<string, { en: string; id: string }> = {
-    "ISO 27001:2022": {
-      en: "Guarantees that we operate a certified Information Security Management System — your data and systems are protected by internationally verified controls.",
-      id: "Menjamin bahwa kami mengoperasikan Sistem Manajemen Keamanan Informasi yang tersertifikasi — data dan sistem Anda dilindungi oleh kontrol yang terverifikasi secara internasional.",
-    },
-    "ISO-IEC 20000-1:2018": {
-      en: "Certifies our IT Service Management processes meet the global standard, ensuring reliable, measurable service delivery to every client.",
-      id: "Mensertifikasi bahwa proses Manajemen Layanan IT kami memenuhi standar global, memastikan penyampaian layanan yang andal dan terukur kepada setiap klien.",
-    },
-    "ISO 9001:2015": {
-      en: "Our Quality Management System is independently audited to ensure every project follows consistent, high-quality processes from kickoff to delivery.",
-      id: "Sistem Manajemen Mutu kami diaudit secara independen untuk memastikan setiap proyek mengikuti proses berkualitas tinggi yang konsisten dari awal hingga selesai.",
-    },
-    "ISO 14001:2015": {
-      en: "Demonstrates our commitment to minimising environmental impact through responsible operations and sustainable infrastructure practices.",
-      id: "Menunjukkan komitmen kami untuk meminimalkan dampak lingkungan melalui operasi yang bertanggung jawab dan praktik infrastruktur yang berkelanjutan.",
-    },
-    "ISO 37001:2016": {
-      en: "An independently certified Anti-Bribery Management System — a strong signal of ethical governance and transparency in every business relationship.",
-      id: "Sistem Manajemen Anti-Penyuapan yang tersertifikasi secara independen — sinyal kuat tata kelola yang etis dan transparansi dalam setiap hubungan bisnis.",
-    },
-    "ISO 45001:2018": {
-      en: "Certified Occupational Health and Safety management, showing we invest in the well-being of the people who build and maintain your systems.",
-      id: "Manajemen Keselamatan dan Kesehatan Kerja yang tersertifikasi, menunjukkan bahwa kami berinvestasi dalam kesejahteraan orang-orang yang membangun dan memelihara sistem Anda.",
-    },
-    "ISO/IEC 15504-5:2012": {
-      en: "Validates our software process capability through rigorous assessment, giving clients confidence in predictable, repeatable engineering outcomes.",
-      id: "Memvalidasi kemampuan proses perangkat lunak kami melalui penilaian yang ketat, memberikan kepercayaan kepada klien pada hasil rekayasa yang dapat diprediksi dan diulang.",
-    },
-    "ISO/IEC 25010:2011": {
-      en: "We follow the international standard for software quality characteristics — ensuring our deliverables meet defined criteria for reliability, security, and maintainability.",
-      id: "Kami mengikuti standar internasional untuk karakteristik kualitas perangkat lunak — memastikan produk kami memenuhi kriteria keandalan, keamanan, dan kemudahan pemeliharaan.",
-    },
+  const certDescriptions: Record<string, string> = {
+    "ISO 27001:2022": "Guarantees that we operate a certified Information Security Management System — your data and systems are protected by internationally verified controls.",
+    "ISO-IEC 20000-1:2018": "Certifies our IT Service Management processes meet the global standard, ensuring reliable, measurable service delivery to every client.",
+    "ISO 9001:2015": "Our Quality Management System is independently audited to ensure every project follows consistent, high-quality processes from kickoff to delivery.",
+    "ISO 14001:2015": "Demonstrates our commitment to minimising environmental impact through responsible operations and sustainable infrastructure practices.",
+    "ISO 37001:2016": "An independently certified Anti-Bribery Management System — a strong signal of ethical governance and transparency in every business relationship.",
+    "ISO 45001:2018": "Certified Occupational Health and Safety management, showing we invest in the well-being of the people who build and maintain your systems.",
+    "ISO/IEC 15504-5:2012": "Validates our software process capability through rigorous assessment, giving clients confidence in predictable, repeatable engineering outcomes.",
+    "ISO/IEC 25010:2011": "We follow the international standard for software quality characteristics — ensuring our deliverables meet defined criteria for reliability, security, and maintainability.",
   };
 
   const activeCertData = computed(() => props.certifications[activeCert.value]);
 
   function getCertDesc(name: string): string {
-    return t(certDescriptions[name] ?? { en: "", id: "" });
+    return certDescriptions[name] ?? "";
   }
 </script>
 
@@ -59,9 +33,9 @@
   <section class="ap-certs">
     <div class="container">
       <div class="ap-section__header">
-        <span class="ap-label">{{ t({ en: "Certifications", id: "Sertifikasi" }) }}</span>
+        <span class="ap-label">Certifications</span>
         <h2 class="ap-section__title">
-          {{ t({ en: "Our credentials", id: "Kredensial kami" }) }}
+          Our credentials
         </h2>
       </div>
 
@@ -115,7 +89,7 @@
                   @click="$emit('openLightbox', activeCertData.image!, activeCertData.name)"
                 >
                   <IconExpand />
-                  <span>{{ t({ en: "Full view", id: "Lihat penuh" }) }}</span>
+                  <span>Full view</span>
                 </button>
               </div>
               <div class="ap-certs__showcase-caption">
