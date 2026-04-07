@@ -25,19 +25,9 @@ export const useCms = () => {
   /**
    * Fetch page data with optional nested populate support.
    * Uses English locale by default.
+   * Routes through server-side proxy to avoid CORS issues.
    * @param contentType - The Strapi content type (e.g., 'pages', 'hero-section')
    * @param populateList - Optional populate object for nested relations/components
-   * @example
-   * // Simple populate (no nesting)
-   * getPageData('pages')
-   * // With nested populate for deep relations
-   * getPageData('pages', {
-   *   categories: {
-   *     populate: {
-   *       slides: { populate: { image: true } }
-   *     }
-   *   }
-   * })
    */
   const getPageData = async (contentType: string, params: PopulateObject = {}) => {
     // Generate cache key
@@ -82,15 +72,33 @@ export const useCms = () => {
     const finalPayload = flattenParams(queryPayload);
 
     const result = await useAsyncData(asyncDataKey.value, async () => {
-      const data = await find(contentType as any, finalPayload);
+      try {
+        // Try using useStrapi first
+        const data = await find(contentType as any, finalPayload);
 
-      if (!data || !data.data) {
-        console.warn(
-          `No data found for English locale in '${contentType}'`,
-        );
+        if (!data || !data.data) {
+          console.warn(
+            `No data found for English locale in '${contentType}'`,
+          );
+        }
+
+        return data;
+      } catch (error) {
+        console.warn(`[useCms] useStrapi failed for '${contentType}', trying direct fetch:`, error);
+        
+        // Fallback: use direct fetch through server proxy
+        try {
+          const queryString = new URLSearchParams(finalPayload as Record<string, string>).toString();
+          const response = await $fetch(`/api/cms/${contentType}`, {
+            method: "GET",
+            query: finalPayload,
+          });
+          return response;
+        } catch (fallbackError) {
+          console.error(`[useCms] Failed to fetch '${contentType}':`, fallbackError);
+          return { data: null };
+        }
       }
-
-      return data;
     });
 
     return result;

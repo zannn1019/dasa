@@ -12,6 +12,9 @@
   async function getMediumData(rssFeedUrl: string, itemsToShow: number) {
     try {
       const response = await fetch(rssFeedUrl);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
       const json = await response.json();
       json.items.forEach((item: any) => {
         if (item.thumbnail === "") {
@@ -20,7 +23,8 @@
         }
       });
       return json.items.slice(0, itemsToShow);
-    } catch {
+    } catch (error) {
+      console.error("[BlogSection] Failed to fetch Medium data:", error);
       return [];
     }
   }
