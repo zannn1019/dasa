@@ -85,7 +85,7 @@ export const useCms = () => {
         return data;
       } catch (error) {
         console.warn(`[useCms] useStrapi failed for '${contentType}', trying direct fetch:`, error);
-        
+
         // Fallback: use direct fetch through server proxy
         try {
           const queryString = new URLSearchParams(finalPayload as Record<string, string>).toString();

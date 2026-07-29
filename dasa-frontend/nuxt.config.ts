@@ -6,16 +6,18 @@ export default defineNuxtConfig({
 
   modules: ["@nuxt/image", "@nuxtjs/google-fonts", "@nuxtjs/seo", "@nuxtjs/strapi"],
   strapi: {
-    url: process.env.STRAPI_URL ?? "http://localhost:1337",
-    prefix: "/api",
-    admin: "/admin",
-    version: "v4",
+    prefix: '/api',
+    admin: '/admin',
+    version: 'v4',
     cookie: {},
-    cookieName: "strapi_jwt",
+    cookieName: 'strapi_jwt',
   },
-  runtimeConfig:{
+
+  runtimeConfig: {
     public: {
-      strapiUrl: process.env.STRAPI_URL ?? 'http://localhost:1337'
+      strapi: {
+        url: 'http://localhost:1337' // Fallback for local development only
+      }
     }
   },
   image: {
