@@ -5,7 +5,7 @@ export const useCms = () => {
   const config = useRuntimeConfig();
 
   // Get Strapi base URL from runtime configuration
-  const strapiUrl = config.public.strapiUrl || "http://localhost:1337";
+  const strapiUrl = config.public.strapi.url || "http://localhost:1337";
 
   /**
    * Convert relative Strapi image URL to absolute URL

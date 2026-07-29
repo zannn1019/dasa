@@ -14,9 +14,12 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
+    strapi: {
+      url: 'http://localhost:1337'
+    },
     public: {
       strapi: {
-        url: 'http://localhost:1337' // Fallback for local development only
+        url: 'http://localhost:1337'
       }
     }
   },

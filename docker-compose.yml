@@ -9,10 +9,10 @@ services:
       - "3000:3000"
     env_file:
       - .env
-    frontend:
-      environment:
-        - PORT=3000
-        - NUXT_PUBLIC_STRAPI_URL=https://cms.webzan.my.id
+    environment:
+      - PORT=3000
+      - STRAPI_URL=https://cms.webzan.my.id
+      - NUXT_PUBLIC_STRAPI_URL=https://cms.webzan.my.id
     networks:
       - dasa-network
     depends_on:
